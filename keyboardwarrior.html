@@ -42,42 +42,28 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Vesperr</h1>
+        <img src="assets/img/favicon.png" alt="">
+        <h1 class="sitename">NeuraPlay Studio</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero">Home<br></a></li>
+          <li><a href="#hero" class="active">Home<br></a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
+          <li><a href="#news">News</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#"><span>Our Games</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+              <li><a href="keyboardwarrior.html">Keyboard Warrior : Heat Beat Mishap</a></li>
+              <li><a href="#">Myseum : Indonesian Culture</a></li>
+              <li><a href="#">Math Knight</a></li>
             </ul>
           </li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <a class="btn-getstarted" href="index.html#about">Get Started</a>
-
     </div>
   </header>
 
@@ -92,7 +78,7 @@
             <li class="current">Portfolio Details</li>
           </ol>
         </nav>
-        <h1>Portfolio Details</h1>
+        <h1>Keyboard Warrior : Heat Beat Mishap</h1>
       </div>
     </div><!-- End Page Title -->
 
@@ -104,23 +90,35 @@
         <div class="row gy-4">
 
           <div class="col-lg-8">
-            <iframe src="https://i.simmer.io/@vonsz/keyboard-warrior-heat-beat-mishap" style="width:960px;height:600px"></iframe>
+            <!-- Kontainer untuk iframe -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe id="gameIframe" src="https://i.simmer.io/@vonsz/keyboard-warrior-heat-beat-mishap" 
+                      class="embed-responsive-item" style="width:816px;height:510px" allow="autoplay" allowfullscreen></iframe>
+            </div>
+            
+            <!-- Tombol kontrol di bawah iframe -->
+            <div class="d-flex justify-content-center mt-3">
+              <!-- Tombol Fullscreen (Menggunakan ikon dari Bootstrap) -->
+              <button id="fullscreenButton" class="btn btn-light" title="Fullscreen">
+                <i class="bi bi-fullscreen"></i> Fullscreen
+              </button>
+            </div>
           </div>
 
           <div class="col-lg-4">
             <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <li><strong>Category</strong>: Game WebGL</li>
+                <!-- <li><strong>Client</strong>: ASU Company</li> -->
+                <li><strong>Project date</strong>: 25 September, 2024</li>
+                <li><strong>Project URL</strong>: <a href="https://simmer.io/@vonsz/keyboard-warrior-heat-beat-mishap">simmer.io/@vonsz</a></li>
               </ul>
             </div>
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Exercitationem repudiandae officiis neque suscipit</h2>
+              <h2>Master Your Typing Speed and Rhythm with a Fast-Paced, Music-Driven Challenge</h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                This rhythm-based game combines elements from popular titles like Osu! and Guitar Hero, challenging players to hit the correct keys (A to Z) in sync with the music's beat. Drawing inspiration from 10fastfingers, the game tests both typing speed and musical timing, creating a fast-paced, immersive experience. Players are required to press the designated keys that appear on the screen in rhythm with the music, increasing in speed and complexity as the game progresses. Perfect for fans of music and rhythm games, this game offers a fun way to improve both typing accuracy and rhythm coordination.
               </p>
             </div>
           </div>
@@ -139,17 +137,7 @@
       <div class="copyright text-center ">
         <p>© <span>Copyright</span> <strong class="px-1 sitename">Vesperr</strong> <span>All Rights Reserved</span></p>
       </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-      </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
@@ -175,6 +163,35 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- JavaScript to load header -->
+  <script>
+    // Function to load header from external file
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+  </script>
+
+
+  <script>
+    // Fungsi untuk full-screen
+    const fullscreenButton = document.getElementById('fullscreenButton');
+    const iframe = document.getElementById('gameIframe');
+
+    fullscreenButton.addEventListener('click', () => {
+      if (iframe.requestFullscreen) {
+        iframe.requestFullscreen();
+      } else if (iframe.mozRequestFullScreen) { // Firefox
+        iframe.mozRequestFullScreen();
+      } else if (iframe.webkitRequestFullscreen) { // Chrome, Safari, Opera
+        iframe.webkitRequestFullscreen();
+      } else if (iframe.msRequestFullscreen) { // IE/Edge
+        iframe.msRequestFullscreen();
+      }
+    });
+  </script>
 </body>
 
 </html>
